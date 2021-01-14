@@ -73,6 +73,7 @@ function computerTakeTurn() {
 
 } // computerTakeTurn
 
+// chooses the third box if there are any two in a row/column/diagonal
 function fillThirdBox(x) {
 	
 	// first row
