@@ -33,7 +33,7 @@ function newGame() {
   
 } // newGame
 
-// randomly chooses a free box for computer
+// computer chooses a box
 function computerTakeTurn() {
   let idName = ""; // id name of box
   computerTurnTaken = false; // reset computerTurnTaken
