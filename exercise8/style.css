@@ -46,8 +46,9 @@ body {
   font-family: 'Hachi Maru Pop', cursive;
   color: #949cdf;
 }
+
 .box:hover {
-  background-color: pink;
+  background-color: #f5dee5;
 }
 
 /*LightBox*/
