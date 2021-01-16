@@ -21,7 +21,7 @@ var topPositionOfBall = startTopPositionOfBall;
 var leftPositionOfBall = startLeftPositionOfBall;
 var topSpeedOfBall = 0;
 var leftSpeedOfBall = 0;
-var ballMinSpeed = 3;
+var ballMinSpeed = 5;
 
 var score1 = 0;
 var score2 = 0;
@@ -222,7 +222,7 @@ function startGame() {
 
 	positionOfPaddle1 = startPositionOfPaddle1;
   positionOfPaddle2 = startPositionOfPaddle2;
-  ballMinSpeed = 3;
+  ballMinSpeed = 5;
 
 	startBall();
 
