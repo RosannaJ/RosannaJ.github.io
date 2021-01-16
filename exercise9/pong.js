@@ -51,12 +51,6 @@ function sound(src) {
   }
 } // sound
 
-
-// // start ball motion
-// window.addEventListener('load', function() {
-// 	startBall();
-// });
-
 // move paddles
 document.addEventListener('keydown', function(e) {
 	
