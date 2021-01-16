@@ -1,0 +1,181 @@
+/*https://www.canva.com/colors/color-palettes/rosettes-and-cream/
+#d8a7b1 - light pink
+#167d7f - blue
+#167d7f - darker blue
+#fae8e0 - white
+#ef7c8e - darker pink
+*/
+
+
+body {
+	background-color: #d8a7b1;
+	color: #ef7c8e;
+}
+
+#header {
+	width: 100%;
+	height: 12vh;
+	background-color: #d8a7b1;
+	position: relative;
+}
+
+#header h2 {
+	position: absolute;
+	bottom: 0px;
+	margin-bottom: 2px;
+	color: #167d7f;
+	font-size: 4em;
+	text-shadow: -1px 0 #fae8e0, 0 1px #fae8e0, 1px 0 #fae8e0, 0 -1px #fae8e0;
+}
+
+#header #left {
+	left: 30px;
+}
+
+#header #right {
+	right: 30px;
+}
+
+#title {
+	text-align: center;
+	color: #fae8e0;
+	font-size: 5em;
+	margin-top: 20px;
+}
+
+#gameboard {
+	left: 0.5%;
+	width: 99%;
+	height: 83vh;
+	background-color: #fae8e0;
+	position: relative;
+}
+
+.paddle {
+	background-color: #ef7c8e;
+	border-radius: 25px; 
+  width: 20px;
+  height: 125px; 
+}
+
+#paddle1 {
+	position: absolute;
+	left: 5px;
+	top: 35vh;
+}
+
+#paddle2 {
+	position: absolute;
+	right: 5px;
+	top: 35vh;
+}
+
+#ball {
+	position: absolute;
+	left: 50vw;
+	top: 50vh;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: #167d7f;
+}
+
+/**** Control Panel ****/
+#controlPanel {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 1;
+}
+
+.controls {
+	display: inline-block;
+	padding: 6px;
+	width: 140px;
+	height: 20px;
+	background-color: #167d7f;
+	border: 4px solid #fae8e0;
+	color: #fae8e0;
+	vertical-align: top;
+	text-align: center;
+	line-height: 20px;
+	font-size: 1.3em;
+	border-radius: 7px;
+}
+
+.controls:hover {
+	background-color: #126069;
+}
+
+.controls:active {
+	background-color: #0e4c54;
+}
+
+#hideControlPanel {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 3;
+}
+
+/****** End Control Panel ******/
+
+/****** LightBox ******/
+#lightbox {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+}
+
+.unhidden {
+  display: block;
+}
+
+#x {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 30px;
+  width: 30px;
+  z-index: 4;
+}
+
+#positionMessage {
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  width: 100%;
+}
+
+#boundaryMessage {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  height: 225px;
+  background-color: rgba(250,232,224,0.9);
+  z-index: 3;
+  padding: 30px;
+  border: thick solid #ef7c8e;
+}
+
+.titletext {
+	text-align: center;
+}
+
+#message {
+	font-size: 3em;
+}
+
+#message2 {
+	font-size: 2em;
+}
+/****** End of LightBox ******/
