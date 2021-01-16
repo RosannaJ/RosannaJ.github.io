@@ -38,9 +38,10 @@ body {
 
 #title {
 	text-align: center;
-	color: #fae8e0;
+	color: white;
 	font-size: 5em;
 	margin-top: 20px;
+	text-shadow: -1px 0 #fae8e0, 0 1px #fae8e0, 1px 0 #fae8e0, 0 -1px #fae8e0;
 }
 
 #gameboard {
