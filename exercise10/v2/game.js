@@ -64,7 +64,7 @@ var lives = 3;
 // start the game
 function startGame() {
   // reset variables
-  currentLevel = 3;
+  currentLevel = 0;
   riderOn = false;
   
   // reset lives
