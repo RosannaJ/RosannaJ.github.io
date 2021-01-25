@@ -93,7 +93,7 @@ const gameBoardWidth = 18;
 const gameBoardHeight = 11;
 const gridBoxes = document.querySelectorAll("#gameBoard div");
 
-const boxWidth = 39;
+const boxWidth = 120;
 const frameWidth = 600;
 
 var gameBoard_x = 0;
