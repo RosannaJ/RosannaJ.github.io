@@ -50,9 +50,9 @@ const levels = [
  * Added: restart option after game ends
  * Added: animate up/down enemy movement
  */ 
- 
- 
-//******************WHERE DOES IT CHECK IF IT IS AT A WALL?*********************8
+
+
+ // enemy animation bug after game over
 
 
 // could use 2d arrays
@@ -180,6 +180,7 @@ function tryToMove (direction) {
   nextClass = gridBoxes[nextLocation].className;
 
   //console.log(nextClass);
+  console.log("stopGame: " + stopGame);
 
   // if obstacle is not passable, don't move
   if (noPassObstacles.includes(nextClass)) { 
@@ -307,6 +308,8 @@ function tryToMove (direction) {
   // if it is an enemy
   if (nextClass.includes("enemy")) {
     stopGame = true;
+
+    //console.log("stopGame: " + stopGame);
     
     // update lives
     lives--;
@@ -387,8 +390,8 @@ function loadLevel() {
 // direction - current direction of animation
 function animateEnemy(boxes, index, direction, currentAnimation) {
   
-  // exit function if no animation
-  if (boxes.length <= 0) { return; }
+  // exit function if no animation or game is stopped
+  if (boxes.length <= 0 || stopGame) { return; }
 
   // update images
   if (direction == "right") {
@@ -561,8 +564,8 @@ function moveGameBoard(direction) {
   } //switch
 
 
-  console.log("gameBoard_x: " + gameBoard_x);
-  console.log("gameBoard_y: " + gameBoard_y);
+  // console.log("gameBoard_x: " + gameBoard_x);
+  // console.log("gameBoard_y: " + gameBoard_y);
 
   // move gameBoard
   document.getElementById("gameBoard").style.transform = "translate(" + gameBoard_x + "px," + gameBoard_y + "px)";
