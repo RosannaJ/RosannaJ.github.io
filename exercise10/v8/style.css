@@ -1,0 +1,346 @@
+/*
+#f4abc4 - pink
+#595b83 - light purple
+#333456 - medium purple
+#060930 - dark purple
+#fff3e6 - cream
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+body {
+  background-color: #333456;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+  color: #060930;
+}
+
+#title {
+  width: 100%;
+  height: 25vh;
+  text-align: center;
+  font-size: 6vh;
+  color: white;
+  line-height: 11vh;
+  padding-top: 0.1vh;
+  /*background-color: gray;*/
+}
+
+#frame {
+  position: relative;
+  width: 1000px;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #060930;
+  max-width: 100%;
+  max-height: 100%
+}
+
+/*******Controls*******/
+#controlPanel {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.controls {
+  display: inline-block;
+  padding: 6px;
+  width: 140px;
+  height: 20px;
+  background-color: #333456;
+  border: 4px solid #595b83;
+  color: #fae8e0;
+  vertical-align: top;
+  text-align: center;
+  line-height: 20px;
+  font-size: 1em;
+  border-radius: 7px;
+}
+/*******End of Controls*******/
+
+/*******LightBox********/
+.hidden {
+  display: none;
+}
+
+.unhidden {
+  display: block;
+}
+
+.positionButtons {
+  position: absolute;
+  top: 47%;
+  left: 0px;
+  width: 99%;
+  height: 50%;
+}
+
+.positionButtons p {
+  margin-top: 0px;
+}
+
+.boundaryMessage {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #595b83;
+  z-index: 1;
+  padding: 30px;
+  width: 750px;
+  height: 550px;
+  top: 25vh;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pauseScreen {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  font-family: Verdana, sans-serif;
+  font-size: 5em;
+  vertical-align: top;
+  text-align: center;
+}
+
+
+#startScreen {
+  display: block;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: Verdana, sans-serif;
+  font-size: 5em;
+  vertical-align: top;
+  text-align: center;
+}
+
+#greeting {
+  color: white;
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+  font-size: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#instructions {
+  color: white;
+  text-align: justify;
+  font-family: 'Bree Serif', serif;
+  font-size: 2.5vh;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/******End of LightBox********/
+
+/********GameBoard********/
+#gameBoard {
+  border: 15px solid #595b83;
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+  justify-content: center;
+  width: 750px;
+  height: 550px;
+  background-color: #00ee00;
+  top: 10vh;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#gameBoard div {
+  background-color: #00ee00;
+}
+
+.rider {
+  background-image: url("images/key.png");
+}
+.tree {
+  background-image: url("images/tree.png");
+  background-repeat: no-repeat
+  /*background-size: cover*/
+}
+.flag {
+  background-image: url("images/goal.png");
+}
+.fence {
+  background-image: url("images/fenceup.png");
+}
+.fenceside {
+  background-image: url("images/fenceside.png");
+}
+
+.horseup {
+  background-image: url("images/characterup.png");
+}
+.horseleft {
+  background-image: url("images/characterleft.png");
+}
+.horseright {
+  background-image: url("images/characterright.png");
+}
+.horsedown {
+  background-image: url("images/characterdown.png");
+}
+
+.horserideup {
+  background-image: url("images/characterrideup.png");
+}
+.horserideleft {
+  background-image: url("images/characterrideleft.png");
+}
+.horserideright {
+  background-image: url("images/characterrideright.png");
+}
+.horseridedown {
+  background-image: url("images/characterridedown.png");
+}
+
+.jumpup {
+  background-image: url("images/fencejumpup.png");
+}
+.jumpleft {
+  background-image: url("images/fencejumpleft.png");
+}
+.jumpright {
+  background-image: url("images/fencejumpright.png");
+}
+.jumpdown {
+  background-image: url("images/fencejumpdown.png");
+}
+
+.enemyleft {
+  background-image: url("images/enemyleft.png");
+}
+.enemyright {
+  background-image: url("images/enemyright.png");
+}
+.enemyup {
+  background-image: url("images/enemyup.png");
+}
+.enemydown {
+  background-image: url("images/enemydown.png");
+}
+
+/********End Of GameBoard********/
+
+.heart1 {
+  background-image: url("images/heart1.png");
+  background-repeat: no-repeat;
+}
+.heart2 {
+  background-image: url("images/heart2.png");
+  background-repeat: no-repeat;
+}
+.heart3 {
+  background-image: url("images/heart3.png");
+  background-repeat: no-repeat;
+}
+
+.message {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  font-family: Verdana, sans-serif;
+  font-size: 8em;
+  vertical-align: top;
+  text-align: center;
+  line-height: 100vh;
+}
+
+#lives {
+  position: absolute;
+  top: 25vh;
+  left: 7vw;
+  width: 600px;
+  height: 10vh;
+}
+
+#end {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  /*background-color: rgba(0,0,0,0.8);*/
+  color: white;
+  font-family: Verdana, sans-serif;
+}
+
+#endMessage {
+  font-size: 6em;
+  vertical-align: top;
+  text-align: center;
+}
+
+.start {
+  margin-top: 0%;
+}
+
+/*.restart {
+
+}*/
+
+button {
+  background-color: #060930;
+  color: #595b83;
+  font-size: 7vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  border-radius: 25px;
+  border: 1vh solid #333456;
+  vertical-align: center;
+  text-align: center;
+  box-shadow: -3px 3px 5px #060930;
+}
+
+button:hover {
+  background-color: #595b83;
+  color: #060930;
+}
+
+button:active {
+  background-color: #333456;
+  box-shadow: -3px 2px 5px #060930;
+  transform: translateY(4px);
+  outline: none;
+}
+
+#credits {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  right: 5%;
+  bottom: 10px;
+}
+
+#credits p {
+  color: white;
+}
