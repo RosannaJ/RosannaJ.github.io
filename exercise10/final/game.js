@@ -551,6 +551,8 @@ function pauseGame() {
   document.getElementById("pauseButton").style.opacity = "0.7";
   document.getElementById("pauseButton").style.cursor = "not-allowed";
 
+  bgm.pause();
+
   stopGame = true;
   
 } // pauseGame
@@ -563,6 +565,8 @@ function resumeGame() {
   document.getElementById("pauseButton").style.cursor = "pointer";
   
   stopGame = false;
+
+  bgm.play();
   
   startAnimation();
   
